@@ -4,6 +4,8 @@
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
             <!-- <link rel="stylesheet" href="bootstrap.css"> -->
             <link rel="stylesheet" href="css/styles.css">
+            <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"> 
+            <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
             <title>Hello, world!</title>
             <!-- Required meta tags -->
             <meta charset="utf-8">
@@ -34,29 +36,40 @@
 
                     https://teamtreehouse.com/community/convert-default-navbar-on-desktop-to-fixed-top-on-mobile
                     - for sticky/fixed on mobile but not on desktop, hide/show w/ media queries or toggle classes in jquery
+
+                - other notes
+                    - mx-auto to center something that's fixed0width and block level
+                      - display:block and width set
+                    - others for padding and margin
+                        - mt-0
+                        - pl-m-5
+                        - only 1-5 available?
+
+                grunt can do things like scss compiling for me
             -->
     </head>
     <body>
 
-        <div class="jumbotron text-center" id="seaFoamHeader">
-            <h1 class="display-5">Theresa Burden Makeup Artistry</h1>
+        <div class="jumbotron text-center border border-primary" id="siteHeader">
+            <h1 class="display-2 font-weigh-bold">Theresa Burden</h1>
+            <h3 class="display-5">Makeup Artistry</h1>
         </div>
 
         <!--TODO: https://stackoverflow.com/questions/21465618/is-it-possible-to-use-twitter-bootstraps-navbar-fix-to-top-only-on-mobile-devic -->
-        <nav class="hidden-md navbar navbar-expand-md bg-dark navbar-dark sticky-top">
-            <a class="navbar-brand" href="#">Brand</a>
+        <nav class="navbar navbar-expand-md bg-light navbar-light">
+            <a class="navbar-brand d-md-none" href="#">Home</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNav">
-                <ul class="navbar-nav">
-                    <li class="navbar-item">
+                <ul class="navbar-nav container justify-content-between">
+                    <li class="nav-item">
                         <a class="nav-link" href="#">first</a>
                     </li>
-                    <li class="navbar-item">
+                    <li class="navr-item">
                         <a class="nav-link" href="#">second</a>
                     </li>
-                    <li class="navbar-item dropdown">
+                    <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">dropdown</a>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="#">First</a>
@@ -64,133 +77,15 @@
                             <a class="dropdown-item" href="#">Third</a>
                         </div>
                     </li>
-                    <li class="navbar-item">
+                    <li class="nav-item">
                         <a class="nav-link" href="#">fourth</a>
                     </li>
                 </ul>
-            <div/>
+            </div>
         </nav>
 
-        <div class="container-fluid bg-success">
-            <ul class="nav nav-pills nav-justified justify-content-center">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">one</a>
-                </li>
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">one</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item nav-link" data-toggle="pill" href="#first-tab">one</a>
-                        <a class="dropdown-item nav-link" data-toggle="pill" href="#second-tab">two</a>
-                        <a class="dropdown-item nav-link" data-toggle="pill" href="#third-tab">three</a>
-                        <a class="dropdown-item nav-link" data-toggle="pill" href="#fourth-tab">four</a>
-                    </div>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#">one</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">one</a>
-                </li>
-            </ul>
-        </div>
-        <div class="tab-content">
-            <div class="tab-pane fade container" id="first-tab">
-                <p>first tab</p>
-            </div>
-
-            <div class="tab-pane fade container" id="second-tab">
-                <p>second tab</p>
-            </div>
-
-            <div class="tab-pane fade container" id="third-tab">
-                <p>third tab</p>
-            </div>
-
-            <div class="tab-pane fade container" id="fourth-tab">
-                <p>fourth tab</p>
-            </div>
-        </div>
-        <div class="btn-group">
-            <button type="button" class="btn btn-primary">
-                test1
-            </button>
-            <button type="button" class="btn btn-primary">
-                test2
-            </button>
-            <div class="btn-group">
-                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                    test3
-                </button>
-                <div class="dropdown-menu">
-                    <!-- <button tupe="button" class="btn btn-primary dropdown-item">
-                        test3-1
-                    </button>
-                    <button tupe="button" class="btn btn-primary dropdown-item">
-                        test3-2
-                    </button> -->
-                    <a class="dropdown-item" href="#">3-1</a>
-                    <a class="dropdown-item" href="#">3-2</a>
-                </div>
-            </div> 
-        </div>
-        <!-- <script type="text/javascript" src="bundle.js" charset="utf-8"></script>
-        <div class="wrapper">
-            <div class="box a">A</div>
-            <div class="box b">B</div>
-            <div class="box c">C</div>
-            <div class="box d">D</div>
-            <div class="box e">E</div>
-            <div class="box f">F</div>
-        </div> -->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 text-center" style="background-color:lavender">
-                    <p>hello</p>
-                    <mark>a mark</mark>
-                    <blockquote>block quote</blockquote>
-                </div>
-                <div class="col-md-4 text-center" style="background-color:orange">
-                    <p class="bg-success text-danger">hello</p>
-                </div>
-                <div class="col-2 text-center" style="background-color:blue">
-                    <p>hello</p>
-                </div>
-                <div class="col-2 text-center" style="background-color:teal">
-                    <p>hello</p>
-                </div>
-            </div>
-            <h2 class="text-center">hello again</h2>
-            <table class="table table-hover table-responsive">
-                <thead>
-                    <tr class="table-success">
-                        <th>first</th>
-                        <th>second</th>
-                        <th>third</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>one</td>
-                        <td>two</td>
-                        <td>three</td>
-                    </tr>
-                    <tr>
-                        <td>one</td>
-                        <td>two</td>
-                        <td>three</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <h1>Hello, world!</h1>
-        <h1>Hello, world!</h1>
-        <h1>Hello, world!</h1>
-        <h1>Hello, world!</h1>
-        <h1>Hello, world!</h1>
-        <h1>Hello, world!</h1>
+        <a href="./index-with-examples.html">Old example</a>
+        
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>

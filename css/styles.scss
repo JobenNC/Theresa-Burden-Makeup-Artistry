@@ -1,3 +1,11 @@
+
+
+//$font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+//$font-family-monospace:       "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+//$font-family-base:            $font-family-sans-serif !default;
+
+//$font-family-base: "Avenir";
+$font-family-base: "Nunito";
 @import 'bootstrap';
 
 $colorOne: blue;
@@ -5,23 +13,33 @@ $periwinkle: #a3c4fa;
 $seaFoam: #91ffad;
 $bodyCopyGray: #CCCCCC;
 
+//body {
+//    font-family: "Times New Roman";
+//}
+
 #somethingElse {
     color: $periwinkle;
 }
 
-#seaFoamHeader
+#siteHeader
 {
-    color: $seaFoam;
+    //color: $seaFoam;
     //color: $bodyCopyGray;
-    background-color: $periwinkle;
-}
-
-@include media-breakpoint-up(md)
-{
+    //background-color: $periwinkle;
+    background-color: white;
     h1
     {
-        color: green;
+        font-family: "Open Sans Condensed";
+        color: $seaFoam;
     }
 }
+
+//@include media-breakpoint-up(md)
+//{
+//    h1
+//    {
+//        color: green;
+//    }
+//}
 
 //sass -I ./node_modules/bootstrap/scss --watch css/styles.scss
