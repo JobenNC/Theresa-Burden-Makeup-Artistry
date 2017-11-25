@@ -1,0 +1,11 @@
+- responsive h1 resive to keep THERESA BURDEN on one line
+- capitalization in title
+- colors aren't quite right
+- changing photos on home page
+- no sticky nav
+- click banner for home
+- light horizontal rule on top of page
+
+
+#stretch goals
+- partial slide-in responsive menu
