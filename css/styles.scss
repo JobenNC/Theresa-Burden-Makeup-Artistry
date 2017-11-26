@@ -12,10 +12,17 @@ $colorOne: blue;
 $periwinkle: #a3c4fa;
 $seaFoam: #91ffad;
 $bodyCopyGray: #CCCCCC;
+$siteBackground: white;
 
 //body {
 //    font-family: "Times New Roman";
 //}
+
+.badgeImage {
+}
+
+.socialMediaImage {
+}
 
 #somethingElse {
     color: $periwinkle;
@@ -26,13 +33,27 @@ $bodyCopyGray: #CCCCCC;
     //color: $seaFoam;
     //color: $bodyCopyGray;
     //background-color: $periwinkle;
-    background-color: white;
-    h1
-    {
+    background-color: $siteBackground;
+    h1 {
         font-family: "Open Sans Condensed";
         color: $seaFoam;
     }
+
+    h4 {
+        color: gray;
+    }
 }
+
+#siteNav 
+{
+}
+
+#homeBadges
+{
+}
+
+//TODO: Consider pulling site bakcground-color higher
+//TODO: Break into multiple style sheets/per page
 
 //@include media-breakpoint-up(md)
 //{
