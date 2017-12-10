@@ -5,6 +5,7 @@
 - no sticky nav
 - click banner for home
 - light horizontal rule on top of page
+- fix capitalization
 
 
 #stretch goals
