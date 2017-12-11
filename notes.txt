@@ -7,6 +7,9 @@
 - light horizontal rule on top of page
 - fix capitalization
 
+#From email
+- makeup social media closer together
+- new images for front page
 
 #stretch goals
 - partial slide-in responsive menu

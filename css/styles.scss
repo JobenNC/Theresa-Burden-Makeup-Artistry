@@ -9,8 +9,8 @@ $font-family-base: "Nunito";
 @import 'bootstrap';
 
 $colorOne: blue;
-$periwinkle: #a3c4fa;
-$seaFoam: #91ffad;
+$periwinkle: #BDC1E2;
+$seaFoam: #96C8B7;
 $bodyCopyGray: #CCCCCC;
 $siteBackground: white;
 
@@ -22,6 +22,10 @@ $siteBackground: white;
 }
 
 .socialMediaImage {
+}
+
+.border-periwinkle {
+  border-color: $periwinkle !important;
 }
 
 #somethingElse {
