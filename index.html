@@ -69,9 +69,13 @@
         <div class="mb-5">
         </div>
 
-        <div class="container text-center border border-periwinkle border-right-0 border-left-0 mb-5" id="siteHeader">
-            <h1 class="display-4 font-weight-bold">THERESA BURDEN</h1>
-            <h4 class="display-5">makeup artistry</h4>
+        <div class="container text-center border border-periwinkle border-top-0 border-right-0 border-left-0 mb-5" id="siteHeader">
+            <!-- Different sized headers for mobile -->
+            <h1 class="display-4 d-none d-sm-block font-weight-bold">THERESA BURDEN</h1>
+            <h1 class="display-5 d-sm-none font-weight-bold">THERESA BURDEN</h1>
+
+            <h4 class="display-5 d-none d-sm-block mb-5">makeup artistry</h4>
+            <h4 class="display-5 d-sm-none mb-5">makeup artistry</h4>
 
             <!--TODO: https://stackoverflow.com/questions/21465618/is-it-possible-to-use-twitter-bootstraps-navbar-fix-to-top-only-on-mobile-devic -->
             <nav class="navbar navbar-expand-md bg-white navbar-light" id="siteNav">
@@ -90,7 +94,7 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">GALLERY</a>
+                            <a class="nav-link" href="./gallery.html">GALLERY</a>
                         </li>
                         <li class="navr-item">
                             <a class="nav-link" href="#">CONTACT</a>
@@ -107,6 +111,7 @@
 
         </div>
 
+        <!-- carousel pictures -->
         <div class="container mb-5">
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
@@ -123,6 +128,19 @@
             </div>
         </div>
 
+        <!-- Text content -->
+        <div class="container text-justify">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <!-- <p class="lead text-center">This is a lead paragraph.  I guess the format is different or something?</p> -->
+                    <p>Like stars in the sky, every face is unique and the right makeup artist can help you shine from the inside out.  Looking your best can transform your mood and confidence in a powerful way. Because of this, I understand that every detail of skin care and makeup application deserves careful consideration.</p>
+                    <p>Having your makeup done is a very personal experience and you want to be sure you're in capable hands.  The right makeup artist will recognize your distinctive features and embrace your individuality. As a licensed esthetician and classically trained makeup artist, it is of great importance to me to follow proper sanitation procedures, appropriate uses of skin care, and utilize specific makeup techniques to ensure a safe, beautiful, and long wearing application.</p>
+                    <p>Makeup washes away, but the memories you make will last.  When reliving a special day through photos your makeup will remain preserved, timeless, and true to you. There are endless possibilities with makeup and I would be honored to help capture the look that is most authentically you.  I hope that together we can manifest your vision and help you not only look, but more importantly, feel like the best version of yourself.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- badges -->
         <div class="container border border-periwinkle border-right-0 border-left-0 mb-5 pt-5 pb-5" id="homeBadges">
             <div class="row justify-content-center">
                 <div class="col-md-2 col-3 text-center">
@@ -140,7 +158,19 @@
             </div>
         </div>
 
-        <!--social media badge-->
+        <!-- blurb -->
+        <!--
+        <div class="container text-justify">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <small>Theresa Burden Makeup Artistry is a published and highly rated professional makeup artist providing art &amp; beauty services to the North Carolina Triangle and beyond.</small>
+                    <small>Raleigh. Durham, Chapel Hill. Apex, Cary. Holly Springs. Willow Spring. Garner. Benson, Wake Forest.</small>
+                </div>
+            </div>
+        </div>
+        -->
+
+        <!--social media badges-->
         <div class="container mb-5">
             <div class="row justify-content-center">
                 <div class="col-2 text-center">

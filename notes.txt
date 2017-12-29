@@ -13,3 +13,13 @@
 
 #stretch goals
 - partial slide-in responsive menu
+
+
+17-Dec-2017
+- space between header title and links
+- Theresa Burden and makeup artistry should be closer
+- move social media links closer together
+
+29-Dec-2017
+- Modals for email success?
+- client-side input verification (valid email address)

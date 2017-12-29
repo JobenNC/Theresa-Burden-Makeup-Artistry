@@ -43,9 +43,16 @@ $siteBackground: white;
         color: $seaFoam;
     }
 
-    h4 {
+    h4, h5 {
         color: gray;
     }
+}
+
+#fakePhoto
+{
+    background-color: green;
+    height: 100px;
+    width: 100px;
 }
 
 #siteNav 
