@@ -23,3 +23,35 @@
 29-Dec-2017
 - Modals for email success?
 - client-side input verification (valid email address)
+- don't lazyload initial rows
+
+30-Dec-2017
+- I might need to look into modularizing my js
+    - things like validation only need to be initialized for contact page
+    - lazy loading & magnific only on the gallery
+- get package.json together (via npm init)
+
+https://www.sitepoint.com/overview-javascript-templating-engines/
+12-Jan-2017
+- Hugo static site generator has a templating language
+- mustache logic-less templates might be a better option
+- but handlebar js includes block expressions (iterators, etc)
+
+https://parkji.co.uk/2013/07/06/building-a-static-site-using-grunt-and-assemble.html
+
+grunt + imagemin: https://github.com/gruntjs/grunt-contrib-imagemin
+
+imageoptim and imagemagik
+https://www.reddit.com/r/web_design/comments/4cmlwz/best_image_optimizer/
+
+batch tools for resizing
+https://www.raymond.cc/blog/most-convenient-way-to-automatically-resize-photos-for-email-im-blogging-and-web-galleries/
+
+Dropdown menus don't work without js turned on???
+
+double check email address
+
+
+Test forms by posting to google forms!
+
+Crop photos to text block size in ovations page and then vertically align!

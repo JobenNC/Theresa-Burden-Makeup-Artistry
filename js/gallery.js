@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    lazyload();
 	$('.popup-gallery').magnificPopup({
 		delegate: 'a',
 		type: 'image',
