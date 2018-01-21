@@ -55,3 +55,5 @@ double check email address
 Test forms by posting to google forms!
 
 Crop photos to text block size in ovations page and then vertically align!
+
+For ovations page, flow text AROUND image on mobile.
