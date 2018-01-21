@@ -96,6 +96,8 @@ $siteBackground: white;
 
 .floatImage
 {
+    width: 50%;
+    margin-right: 20px;
 }
 
 @include media-breakpoint-up(md)
@@ -103,7 +105,6 @@ $siteBackground: white;
     .floatText
     {
         width: 50%;
-        float: right;
     }
 }
 //TODO: Consider pulling site bakcground-color higher
