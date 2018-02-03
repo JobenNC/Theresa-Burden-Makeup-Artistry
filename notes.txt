@@ -57,3 +57,48 @@ Test forms by posting to google forms!
 Crop photos to text block size in ovations page and then vertically align!
 
 For ovations page, flow text AROUND image on mobile.
+
+
+scroll bar was the thing causing that odd shifting
+
+
+https://www.npmjs.com/package/mustache
+- this with a js task runner is probably the way to go
+
+<!--
+                Theresa's notes:
+                - Title (al pages)
+                - Nav (all pages)
+                  - Home?
+                  - About: services/faq/bio
+                  - Gallery
+                  - Testimonial
+                  - Contact
+                  - Community
+                - Headshot w/ intro on home page
+                - Badges at bottom of page
+                - Social media icons on all pages (where?)
+                - Fonts
+                  - Adabi MT Condensed Light
+                  - Avenir
+                - Colors
+                  - Sefoam
+                    - C43/M0/Y32/K0
+                  - Periwinkle
+                    - C36/M23/Y2/K0
+                  - Body Copy Gray
+                    - black w/ gray scale of 85%
+
+                    https://teamtreehouse.com/community/convert-default-navbar-on-desktop-to-fixed-top-on-mobile
+                    - for sticky/fixed on mobile but not on desktop, hide/show w/ media queries or toggle classes in jquery
+
+                - other notes
+                    - mx-auto to center something that's fixed0width and block level
+                      - display:block and width set
+                    - others for padding and margin
+                        - mt-0
+                        - pl-m-5
+                        - only 1-5 available?
+
+                grunt can do things like scss compiling for me
+            -->

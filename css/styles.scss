@@ -38,13 +38,22 @@ $siteBackground: white;
     //color: $bodyCopyGray;
     //background-color: $periwinkle;
     background-color: $siteBackground;
+    a {
+        text-decoration: none;
+    }
     h1 {
         font-family: "Open Sans Condensed";
         color: $seaFoam;
+        a {
+            color: $seaFoam;
+        }
     }
 
     h4, h5 {
         color: gray;
+        a {
+            color: gray;
+        }
     }
 }
 
