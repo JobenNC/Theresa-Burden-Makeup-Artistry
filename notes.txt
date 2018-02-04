@@ -102,3 +102,13 @@ https://www.npmjs.com/package/mustache
 
                 grunt can do things like scss compiling for me
             -->
+
+
+  !!! - Importnant !!!
+  The higher the width:height ration, the more difficult it is to resize to long block of text!
+
+  no wrapping on FAQ.  mutliple headers wrapping would seem weird.
+
+  For today
+  - Need pictures!
+  - If you've cropped something for the ID pages, I need orig cropped just like that.
