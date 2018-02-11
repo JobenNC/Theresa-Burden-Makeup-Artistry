@@ -11,12 +11,14 @@ $font-family-base: "Nunito";
 $colorOne: blue;
 $periwinkle: #BDC1E2;
 $seaFoam: #96C8B7;
-$bodyCopyGray: #CCCCCC;
+$bodyCopyGray: #5e6268;
 $siteBackground: white;
 
-//body {
-//    font-family: "Times New Roman";
-//}
+body {
+    /*font-family: "Times New Roman";*/
+    /*color: $bodyCopyGray;*/
+    color: gray;
+}
 
 .badgeImage {
 }
@@ -117,11 +119,30 @@ $siteBackground: white;
     width: 50%;
 }
 
+.floatText
+{
+    line-height: 1.6;
+}
+
+.ovationPic
+{
+}
+
+.photoCredit
+{
+    font-size: 11px;
+}
+
+
 @include media-breakpoint-up(md)
 {
     .floatText
     {
         width: 50%;
+    }
+    .photoCredit
+    {
+        font-size: 15px;
     }
 }
 
@@ -129,7 +150,7 @@ $siteBackground: white;
 {
     .growText
     {
-        font-size: 20pt;
+        font-size: 25pt;
     }
 
     .floatText
@@ -137,6 +158,20 @@ $siteBackground: white;
         font-size: 15pt;
     }
 }
+
+@include media-breakpoint-up(xl)
+{
+    .growText
+    {
+        font-size: 30pt;
+    }
+
+    .floatText
+    {
+        font-size: 20pt;
+    }
+}
+
 //TODO: Consider pulling site bakcground-color higher
 //TODO: Break into multiple style sheets/per page
 

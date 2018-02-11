@@ -112,3 +112,34 @@ https://www.npmjs.com/package/mustache
   For today
   - Need pictures!
   - If you've cropped something for the ID pages, I need orig cropped just like that.
+
+
+  For later:
+  - how can i make this deterministic? when I know i have a two column layout and i want to match text & image height (with fixed width)
+    - vary aspect ratio
+    - vary font-size
+  - it might be worth it to mixin with img-fluid
+    - i sometimes want to "cancel" the lg or xl adjustment
+      - the grid still keeps things centered
+
+  Stylistic notes
+  - a high height:width file looks bad occupying a row on a large screen. (b/c it's huge!)
+
+  bio
+  - it might be easier to do two simple columns with font adjustments at lg, xl, then line up everything else
+
+  !!! - something i've mixed
+  - text boxes (and therefore text lines) don't resize continuously
+    they "jump" at the same time the picture does
+  - so i can match sizes at the breakpoints, then i'm good!
+
+
+  ??? - will fonts be consistent size (at same pxl height) compared to picture
+        across browsers?
+        https://zellwk.com/blog/responsive-typography/
+
+  blog post about this could be fun
+  - matching sizes, responsive typography, corss browser, etc
+  - is pulling up style info to makrkup good?
+    - it's declarative that way
+      - stylesheets aren't entirely declarative??? (i actually don't know)
