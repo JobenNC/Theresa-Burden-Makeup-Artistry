@@ -65,7 +65,6 @@
             </nav>
         </div>
 
-
         <div class="container">
             <form class="customForm">
                 <div class="form-group">
@@ -82,10 +81,14 @@
                     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
                 <div class="form-group">
+                    <label for="confirmEmail">Confirm Email address</label>
+                    <input oninput="checkEmail(this)" type="confirmEmail" required class="form-control" id="confirmEmail" aria-describedby="confirmEmailHelp" placeholder="Confirm email">
+                    <small id="confirmEmailHelp" class="form-text text-muted">Please confirm your email address.</small>
+                </div>
+                <div class="form-group">
                         <label for="comment">Comment</label>
                         <textarea class="form-control" id="comment" rows="3"></textarea>
                 </div>
-
 
                 <div class="form-group">
                     <label for="date">Last Name</label>
@@ -94,17 +97,13 @@
 
                 <div class="form-group">
                     <label for="checkAPI">Check API</label>
-                    <input oninput="check(this)" type="text" class="form-control" placeholder="Checking API.">
+                    <input oninput="checkTest(this)" type="text" class="form-control" placeholder="Checking API.">
                 </div>
-
 
                 <button type="submit" class="btn btn-primary">Submit</button>
 
-
             </form>
         </div>
-
-        
 
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 

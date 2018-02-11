@@ -59,6 +59,12 @@ body {
     }
 }
 
+.seaFoamContact
+{
+    color: $seaFoam;
+    text-decoration: none;
+}
+
 #fakePhoto
 {
     background-color: green;
@@ -126,6 +132,12 @@ body {
 
 .ovationPic
 {
+}
+
+.fancyStart
+{
+    color:black;
+    font-size: 19px;
 }
 
 .photoCredit

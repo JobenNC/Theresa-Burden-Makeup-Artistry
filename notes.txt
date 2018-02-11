@@ -143,3 +143,30 @@ https://www.npmjs.com/package/mustache
   - is pulling up style info to makrkup good?
     - it's declarative that way
       - stylesheets aren't entirely declarative??? (i actually don't know)
+
+all pages
+  - new social media icons
+    - Need consistently sized ones
+
+- Finish FAQ
+  - need cropped images
+  - Responsive behavior
+    - Probably should flatten sooner
+
+- Finish Bio
+  - Have images
+  - Using new reference for newspaper style
+
+- finish contact page
+  - email match check
+  - integrate php
+
+finish gallery
+  - Need all pictures
+  - create thumbnails
+
+- start services
+  - Get the picture for it
+
+- Community
+  - don't do yet/for launch?
