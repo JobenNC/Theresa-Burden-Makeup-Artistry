@@ -145,13 +145,13 @@ https://www.npmjs.com/package/mustache
       - stylesheets aren't entirely declarative??? (i actually don't know)
 
 all pages
+  - Resize very large images
   - new social media icons
     - Need consistently sized ones
 
 - Finish FAQ
-  - need cropped images
   - Responsive behavior
-    - Probably should flatten sooner
+    - Might need responsive text size like in ovations
 
 - Finish Bio
   - Have images
@@ -170,3 +170,14 @@ finish gallery
 
 - Community
   - don't do yet/for launch?
+
+- Home page
+  - Pictures for carousel
+
+- Footer
+  - What goes there?
+  - Which pages?
+
+Organizational tasks
+- Task runner & templating
+- Modularize scss
