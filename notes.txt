@@ -148,6 +148,9 @@ all pages
   - Resize very large images
   - new social media icons
     - Need consistently sized ones
+  - favicon/icon
+  - meta-data to indicate image preview (facebook, etc)
+  - SEO stuff
 
 - Finish FAQ
   - Responsive behavior
@@ -172,7 +175,7 @@ finish gallery
   - don't do yet/for launch?
 
 - Home page
-  - Pictures for carousel
+  - normalize sizes for carousel pictures
 
 - Footer
   - What goes there?
