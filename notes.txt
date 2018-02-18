@@ -153,20 +153,21 @@ all pages
   - SEO stuff
 
 - Finish FAQ
+  - either resize text or bring in margins on answers
   - Responsive behavior
     - Might need responsive text size like in ovations
 
 - Finish Bio
   - Have images
   - Using new reference for newspaper style
+  - shrink chalk picture
 
 - finish contact page
   - email match check
   - integrate php
 
-finish gallery
-  - Need all pictures
-  - create thumbnails
+ - finish gallery
+  - add photographer information and titles
 
 - start services
   - Get the picture for it
@@ -180,6 +181,13 @@ finish gallery
 - Footer
   - What goes there?
   - Which pages?
+  - every page gets social media icons
+
+- header
+  - Gallery, Contact, Ovations, About, Community
+
+- Community
+  - Coming soon
 
 Organizational tasks
 - Task runner & templating
