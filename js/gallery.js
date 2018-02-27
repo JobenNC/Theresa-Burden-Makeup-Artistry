@@ -13,7 +13,8 @@ $(document).ready(function() {
 		image: {
 			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
 			titleSrc: function(item) {
-				return item.el.attr('title') + '<small>Add photographer info here!</small>';
+				//return item.el.attr('title') + '<small>' + item.el.attr('photographer') + '</small>';
+				return item.el.attr('photographer');
 			}
 		}
 	});

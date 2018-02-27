@@ -18,6 +18,7 @@ body {
     /*font-family: "Times New Roman";*/
     /*color: $bodyCopyGray;*/
     color: gray;
+    height: 100%;
 }
 
 .badgeImage {
@@ -62,6 +63,7 @@ body {
 .seaFoamContact
 {
     color: $seaFoam;
+    /*color: rgb(187, 225, 216);*/
     text-decoration: none;
 }
 
@@ -82,8 +84,27 @@ body {
 {
 }
 
+#seaFoamFooter
+{
+    background-color: rgb(187, 225, 216);
+}
+
+#communityPlaceHolder
+{
+    min-height: 300px;
+}
+
+#copyright
+{
+}
+
 #homeBadges
 {
+}
+
+#pullUpColumn
+{
+    margin-top: -50px;
 }
 
 .pageHeader
