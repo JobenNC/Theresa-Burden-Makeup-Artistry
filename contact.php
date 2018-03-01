@@ -19,7 +19,7 @@
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-            <link rel="icon" type="image/png" href="img/favicon.png" />
+            <link rel="icon" type="image/png" href="img/Icons/favicon.png" />
             <meta name="description" content="Theresa Burden: Raleigh Makeup Artist" />
             <meta name="keywords" content="theresa burden, makeup artist, art, artist, wedding, drawing, bridal, raleigh, cary, north carolina, nc, apex, durham, triangle" />
             <meta name="robots" content="index,follow" />
@@ -93,8 +93,8 @@
 
 
                 //grab form variables
-                $firstname = stripslashes($_POST['firstname']);
-                $lastname = stripslashes($_POST['lastname']);
+                $firstName = stripslashes($_POST['firstName']);
+                $lastName = stripslashes($_POST['lastName']);
                 $email = stripslashes($_POST['email']);
                 $date = stripslashes($_POST['date']);
                 $time = stripslashes($_POST['time']);
@@ -117,8 +117,8 @@
                     \tEmail sent from theresaburden.com contact page Form\n
                     ********************************************************************************************\n\n\t\t
                     Time Sent: {$datetime}\n\t\t
-                    First Name: {$firstname}\n\t\t
-                    Last Name: {$lastname}\n\t\t
+                    First Name: {$firstName}\n\t\t
+                    Last Name: {$lastName}\n\t\t
                     Email: {$email}\n\t\t
                     Phone number: {$phone}\n\t\t
 
@@ -164,29 +164,29 @@
                 { ?>
                 <div class="form-group">
                     <label for="firstName">First Name</label>
-                    <input required type="text" class="form-control" name="firstName" id="firstName" placeholder="First Name" value="<?= isset($firstName) ? htmlspecialchars($firstName):""; ?>">
+                    <input required type="text" class="form-control" name="firstName" id="firstName" placeholder="" value="<?= isset($firstName) ? htmlspecialchars($firstName):""; ?>">
                 </div>
                 <div class="form-group">
                     <label for="lastName">Last Name</label>
-                    <input required type="text" class="form-control" name="lastName" id="lastName" placeholder="Last Name" value="<?= isset($lastname) ? htmlspecialchars($lastName):""; ?>">
+                    <input required type="text" class="form-control" name="lastName" id="lastName" placeholder="" value="<?= isset($lastname) ? htmlspecialchars($lastName):""; ?>">
                 </div>
                 <div class="form-group">
                     <label for="email">Email address</label>
-                    <input type="email" required class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email" value="<?= isset($email) ? htmlspecialchars($email):""; ?>">
+                    <input type="email" required class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="" value="<?= isset($email) ? htmlspecialchars($email):""; ?>">
                 </div>
                 <div class="form-group">
                     <label for="confirmEmail">Confirm Email address</label>
-                    <input oninput="checkEmail(this)" type="confirmEmail" required class="form-control" id="confirmEmail" aria-describedby="confirmEmailHelp" placeholder="Confirm email">
+                    <input oninput="checkEmail(this)" type="confirmEmail" required class="form-control" id="confirmEmail" aria-describedby="confirmEmailHelp" placeholder="">
                     <small id="confirmEmailHelp" class="form-text text-muted">Please confirm your email address.</small>
                 </div>
                 <div class="form-group">
                     <label for="phoneNumber">Phone Number</label>
-                    <input type="text" class="form-control" id="phoneNumber" name="phone" placeholder="Phone Number" value="<?= isset($phone) ? htmlspecialchars($phone):""; ?>">
+                    <input type="text" class="form-control" id="phoneNumber" name="phone" placeholder="" value="<?= isset($phone) ? htmlspecialchars($phone):""; ?>">
                 </div>
 
                 <div class="form-group">
                     <label for="eventType">Event Type</label>
-                    <input type="text" class="form-control" id="eventType" name="event" placeholder="Event Type" value="<?= isset($event) ? htmlspecialchars($event):""; ?>">
+                    <input type="text" class="form-control" id="eventType" name="event" placeholder="" value="<?= isset($event) ? htmlspecialchars($event):""; ?>">
                 </div>
                 <!--
                 <div class="form-group">
@@ -208,17 +208,17 @@
 
                 <div class="form-group">
                     <label for="date">Event Date</label>
-                    <input required type="text" class="form-control" id="datepicker" name="date" placeholder="Please select a date." value="<?= isset($date) ? htmlspecialchars($date):""; ?>">
+                    <input required type="text" class="form-control" id="datepicker" name="date" placeholder="" value="<?= isset($date) ? htmlspecialchars($date):""; ?>">
                 </div>
 
                 <div class="form-group">
                     <label for="startTime">Event Start Time</label>
-                    <input type="text" class="form-control" id="startTime" name="time" placeholder="Start Time" value="<?= isset($time) ? htmlspecialchars($time):""; ?>">
+                    <input type="text" class="form-control" id="startTime" name="time" placeholder="" value="<?= isset($time) ? htmlspecialchars($time):""; ?>">
                 </div>
 
                 <div class="form-group">
                     <label for="serviceCount">How many people need makeup services?</label>
-                    <input type="text" class="form-control" id="serviceCount" name="count" placeholder="Number of people" value="<?= isset($count) ? htmlspecialchars($count):""; ?>">
+                    <input type="text" class="form-control" id="serviceCount" name="count" placeholder="" value="<?= isset($count) ? htmlspecialchars($count):""; ?>">
                 </div>
 
                 <div class="form-group">
@@ -231,7 +231,7 @@
 
                 <div class="form-group">
                     <label for="referredBy">How did you hear about me?</label>
-                    <input type="text" class="form-control" id="referredBy" name="refer" placeholder="Referred by" value="<?= isset($refer) ? htmlspecialchars($refer):""; ?>">
+                    <input type="text" class="form-control" id="referredBy" name="refer" placeholder="" value="<?= isset($refer) ? htmlspecialchars($refer):""; ?>">
                 </div>
                 <!--
                 <div class="form-group">
@@ -268,7 +268,7 @@
 
                 <div class="form-group">
                         <label for="comment">Comment</label>
-                        <textarea class="form-control" id="comment" name="message" rows="3" placeholder="Place your comments here" value="<?= isset($message) ? htmlspecialchars($message):""; ?>"></textarea>
+                        <textarea class="form-control" id="comment" name="message" rows="3" placeholder="" value="<?= isset($message) ? htmlspecialchars($message):""; ?>"></textarea>
                 </div>
 
 
@@ -288,7 +288,7 @@
                         <div class="row justify-content-center">
                             <div class="col-10">
                                 <a target="blank" href="https://instagram.com/theresaburdenbeauty/">
-                                    <img class="img-fluid socialMediaImage" src="img/instagram-cropped.png" alt="facebook">
+                                    <img class="img-fluid socialMediaImage" src="img/Icons/instagram-cropped.png" alt="facebook">
                                 </a>
                             </div>
                         </div>
@@ -297,7 +297,7 @@
                         <div class="row justify-content-center">
                             <div class="col-10">
                                 <a target="blank" href="http://www.facebook.com/theresaburdenbeauty">
-                                    <img class="img-fluid socialMediaImage" src="img/facebook-cropped.png" alt="instagram">
+                                    <img class="img-fluid socialMediaImage" src="img/Icons/facebook-cropped.png" alt="instagram">
                                 </a>
                             </div>
                         </div>
@@ -306,7 +306,7 @@
                         <div class="row justify-content-center">
                             <div class="col-10">
                                 <a target="blank" href="https://plus.google.com/u/0/113612275164670243486">
-                                    <img class="img-fluid socialMediaImage" src="img/gplus-cropped.png" alt="pinterest">
+                                    <img class="img-fluid socialMediaImage" src="img/Icons/gplus-cropped.png" alt="pinterest">
                                 </a>
                             </div>
                         </div>
@@ -315,7 +315,7 @@
                         <div class="row justify-content-center">
                             <div class="col-10">
                                 <a target="blank" href="https://www.pinterest.com/theresaburdenbeauty/">
-                                    <img class="img-fluid socialMediaImage" src="img/pinterest-cropped.png" alt="pinterest">
+                                    <img class="img-fluid socialMediaImage" src="img/Icons/pinterest-cropped.png" alt="pinterest">
                                 </a>
                             </div>
                         </div>
