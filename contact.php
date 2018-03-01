@@ -171,11 +171,11 @@
                     <input required type="text" class="form-control" name="lastName" id="lastName" placeholder="" value="<?= isset($lastname) ? htmlspecialchars($lastName):""; ?>">
                 </div>
                 <div class="form-group">
-                    <label for="email">Email address</label>
+                    <label for="email">Email Address</label>
                     <input type="email" required class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="" value="<?= isset($email) ? htmlspecialchars($email):""; ?>">
                 </div>
                 <div class="form-group">
-                    <label for="confirmEmail">Confirm Email address</label>
+                    <label for="confirmEmail">Confirm Email Address</label>
                     <input oninput="checkEmail(this)" type="confirmEmail" required class="form-control" id="confirmEmail" aria-describedby="confirmEmailHelp" placeholder="">
                     <small id="confirmEmailHelp" class="form-text text-muted">Please confirm your email address.</small>
                 </div>
@@ -186,7 +186,7 @@
 
                 <div class="form-group">
                     <label for="eventType">Event Type</label>
-                    <input type="text" class="form-control" id="eventType" name="event" placeholder="" value="<?= isset($event) ? htmlspecialchars($event):""; ?>">
+                    <input required type="text" class="form-control" id="eventType" name="event" placeholder="" value="<?= isset($event) ? htmlspecialchars($event):""; ?>">
                 </div>
                 <!--
                 <div class="form-group">
@@ -267,12 +267,12 @@
                 -->
 
                 <div class="form-group">
-                        <label for="comment">Comment</label>
+                        <label for="comment">Message</label>
                         <textarea class="form-control" id="comment" name="message" rows="3" placeholder="" value="<?= isset($message) ? htmlspecialchars($message):""; ?>"></textarea>
                 </div>
 
 
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary" id="contactButton">Submit</button>
 
             </form>
             <?php
