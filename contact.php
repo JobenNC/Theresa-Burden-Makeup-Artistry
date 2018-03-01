@@ -5,8 +5,6 @@
             <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.standalone.css"> -->
             <!-- <link rel="stylesheet" href="bootstrap.css"> -->
 
-            <!-- Magnific Popup core CSS file -->
-            <link rel="stylesheet" href="node_modules/magnific-popup/dist/magnific-popup.css">
 
             <link href="https://cdn.jsdelivr.net/gh/atatanasov/gijgo@1.7.3/dist/combined/css/gijgo.min.css" rel="stylesheet" type="text/css" />
 
@@ -14,20 +12,20 @@
 
             <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"> 
             <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-            <title>Contact</title>
+            <title>Thersa Burden Makeup Artistry</title>
             <!-- Required meta tags -->
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
             <link rel="icon" type="image/png" href="img/Icons/favicon.png" />
-            <meta name="description" content="Theresa Burden: Raleigh Makeup Artist" />
+            <meta name="description" content="Theresa Burden Makeup Artistry" />
             <meta name="keywords" content="theresa burden, makeup artist, art, artist, wedding, drawing, bridal, raleigh, cary, north carolina, nc, apex, durham, triangle" />
             <meta name="robots" content="index,follow" />
             <meta name="author" content="Theresa Burden, Joseph Jarriel" />
-            <meta property="og:image" content="img/bio/makeupartist-1.jpg" />
-            <meta property="og:description" content="Theresa Burden: Raleigh Makeup Artist" />
+            <meta property="og:image" content="img/about/makeupartist-1.jpg" />
+            <meta property="og:description" content="Theresa Burden Makeup Artistry" />
             <meta property="og:url"content="http://www.theresaburden.com/index.html" />
-            <meta property="og:title" content="Theresa Burden: Raleigh Makeup Artist" />
+            <meta property="og:title" content="Theresa Burden Makeup Artistry" />
 
     </head>
     <body>
@@ -37,10 +35,10 @@
 
         <div class="container text-center border border-periwinkle border-top-0 border-right-0 border-left-0 mb-5" id="siteHeader">
             <!-- Different sized headers for mobile -->
-            <h1 class="display-4 d-none d-sm-block font-weight-bold"><a href="./index.html">THERESA BURDEN</a></h1>
-            <h1 class="display-5 d-sm-none font-weight-bold"><a href="./index.html">THERESA BURDEN</a></h1>
-            <h4 class="display-5 d-none d-sm-block mb-5"><a href="./index.html">makeup artistry</a></h4>
-            <h4 class="display-5 d-sm-none mb-5"><a href="./index.html">makeup artistry</a></h4>
+            <h1 class="display-4 d-none d-sm-block font-weight-bold"><a href="./">THERESA BURDEN</a></h1>
+            <h1 class="display-5 d-sm-none font-weight-bold"><a href="./">THERESA BURDEN</a></h1>
+            <h4 class="display-5 d-none d-sm-block mb-5"><a href="./">makeup artistry</a></h4>
+            <h4 class="display-5 d-sm-none mb-5"><a href="./">makeup artistry</a></h4>
 
             <!--TODO: https://stackoverflow.com/questions/21465618/is-it-possible-to-use-twitter-bootstraps-navbar-fix-to-top-only-on-mobile-devic -->
             <nav class="navbar navbar-expand-md bg-white navbar-light" id="siteNav">
@@ -158,7 +156,7 @@
             <?php
             if(isset($message))
             {
-                echo "<p class=\"lab\">".$message."</p>";
+                echo "<p class=\"lab text-center\">".$message."</p>";
             } else {
                 if($displayForm)
                 { ?>
@@ -333,11 +331,6 @@
 
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 
-        <!-- Magnific Popup core JS file -->
-        <script src="node_modules/magnific-popup/dist/jquery.magnific-popup.js"></script>
-
-        <!-- Lazyload JS file -->
-        <script src="node_modules/lazyload/lazyload.js"></script>
 
         <script src="https://cdn.jsdelivr.net/gh/atatanasov/gijgo@1.7.3/dist/combined/js/gijgo.min.js" type="text/javascript"></script>
 

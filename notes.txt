@@ -207,3 +207,5 @@ editable select
 
 Raleigh Makeup Artist dot com
 - also point to theresa's page w/ canonical url?
+
+Should I leave js files coming from CDNs?
