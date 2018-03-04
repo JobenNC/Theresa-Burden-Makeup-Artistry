@@ -12,20 +12,20 @@
 
             <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"> 
             <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-            <title>Thersa Burden Makeup Artistry</title>
+            <title>Theresa Burden Makeup Artistry - Contact</title>
             <!-- Required meta tags -->
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
             <link rel="icon" type="image/png" href="img/Icons/favicon.png" />
-            <meta name="description" content="Theresa Burden Makeup Artistry" />
-            <meta name="keywords" content="theresa burden, makeup artist, art, artist, wedding, drawing, bridal, raleigh, cary, north carolina, nc, apex, durham, triangle" />
+            <meta name="description" content="Theresa Burden Makeup Artistry - Contact" />
+            <meta name="keywords" content="theresa burden, raleigh makeup artist, cary makeup artist, makeup artist, art, artist, wedding, drawing, bridal, raleigh, cary, north carolina, nc, apex, durham, triangle" />
             <meta name="robots" content="index,follow" />
             <meta name="author" content="Theresa Burden, Joseph Jarriel" />
             <meta property="og:image" content="img/about/makeupartist-1.jpg" />
-            <meta property="og:description" content="Theresa Burden Makeup Artistry" />
-            <meta property="og:url"content="http://www.theresaburden.com/index.html" />
-            <meta property="og:title" content="Theresa Burden Makeup Artistry" />
+            <meta property="og:description" content="Theresa Burden Makeup Artistry - Contact" />
+            <meta property="og:url"content="http://www.theresaburden.com/contact.html" />
+            <meta property="og:title" content="Theresa Burden Makeup Artistry - Contact" />
+            
 
     </head>
     <body>
@@ -286,7 +286,7 @@
                         <div class="row justify-content-center">
                             <div class="col-10">
                                 <a target="blank" href="https://instagram.com/theresaburdenbeauty/">
-                                    <img class="img-fluid socialMediaImage" src="img/Icons/instagram-cropped.png" alt="facebook">
+                                    <img class="img-fluid socialMediaImage" src="img/Icons/instagram-cropped.png" alt="instagram link icon">
                                 </a>
                             </div>
                         </div>
@@ -295,7 +295,7 @@
                         <div class="row justify-content-center">
                             <div class="col-10">
                                 <a target="blank" href="http://www.facebook.com/theresaburdenbeauty">
-                                    <img class="img-fluid socialMediaImage" src="img/Icons/facebook-cropped.png" alt="instagram">
+                                    <img class="img-fluid socialMediaImage" src="img/Icons/facebook-cropped.png" alt="facebook link icon">
                                 </a>
                             </div>
                         </div>
@@ -304,7 +304,7 @@
                         <div class="row justify-content-center">
                             <div class="col-10">
                                 <a target="blank" href="https://plus.google.com/u/0/113612275164670243486">
-                                    <img class="img-fluid socialMediaImage" src="img/Icons/gplus-cropped.png" alt="pinterest">
+                                    <img class="img-fluid socialMediaImage" src="img/Icons/gplus-cropped.png" alt="google plus link icon">
                                 </a>
                             </div>
                         </div>
@@ -313,7 +313,7 @@
                         <div class="row justify-content-center">
                             <div class="col-10">
                                 <a target="blank" href="https://www.pinterest.com/theresaburdenbeauty/">
-                                    <img class="img-fluid socialMediaImage" src="img/Icons/pinterest-cropped.png" alt="pinterest">
+                                    <img class="img-fluid socialMediaImage" src="img/Icons/pinterest-cropped.png" alt="pinterest link icon">
                                 </a>
                             </div>
                         </div>
