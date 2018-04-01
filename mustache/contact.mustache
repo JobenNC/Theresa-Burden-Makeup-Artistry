@@ -1,0 +1,210 @@
+{{> header }}
+
+        <div class="container mb-5 text-center pageHeader">
+            <h2>CONTACT</h2>
+        </div>
+
+        <?PHP
+        $displayForm =True;
+        if($_POST)
+        {
+            // anti-spammer stuff
+            if (empty($_GET))
+            {  // prevents spammers who are trying to send data through a GET
+                // checks for characters that shouldn't be part of an email address
+                $valid_email = preg_match("/[\\000-\\037]/",stripslashes($_POST["email"]));
+                $valid_email=eregi('^([0-9a-z]+[-._+&])*[0-9a-z]+@([-0-9a-z]+[.])+[a-z]{2,6}$',$valid_email);
+
+                // checks for anything in any form field that contains common spammer crap
+                $crack = preg_match( "/bcc:|to:|cc:|mime-version|multipart|<a|\[url|Content-Type:/i", implode( $_POST ));
+
+
+                //grab form variables
+                $firstName = stripslashes($_POST['firstName']);
+                $lastName = stripslashes($_POST['lastName']);
+                $email = stripslashes($_POST['email']);
+                $date = stripslashes($_POST['date']);
+                $time = stripslashes($_POST['time']);
+                $phone = stripslashes($_POST['phone']);
+                $event = stripslashes($_POST['event']);
+                $count = stripslashes($_POST['count']);
+                $hair = stripslashes($_POST['hair']);
+                $refer = stripslashes($_POST['refer']);
+                $message = stripslashes($_POST['message']);
+
+                //grab visitor information
+
+                $datetime = date("F j, Y, g:i a : e");
+
+
+                $crackMessage = " Your message contained e-mail headers within the message body.<br/>This seems to be a cracking attempt and the message has not been sent.";
+
+
+                $smessage = "
+                    \tEmail sent from theresaburden.com contact page Form\n
+                    ********************************************************************************************\n\n\t\t
+                    Time Sent: {$datetime}\n\t\t
+                    First Name: {$firstName}\n\t\t
+                    Last Name: {$lastName}\n\t\t
+                    Email: {$email}\n\t\t
+                    Phone number: {$phone}\n\t\t
+
+                    How they found you: {$refer}\n\t\t
+                    Event date: {$date}\n\t\t
+                    Event time: {$time}\n\t\t
+                    Event type: {$event}\n\t\t
+
+                    Message: {$message}\n\n\t
+                    ********************************************************************************************\n\n
+                    ";
+
+
+                if(!$crack)
+                {
+                        $mainsent = mail("theresa@theresaburden.com", "Email via theresaburden.com Website", $smessage, "From: no-reply@theresaburden.com\r\nBounce-to:no-reply@theresaburden.com\r\nReply-To:".$email);
+                        if($mainsent)
+                        {
+                            $displayForm = False;
+                            $message = "Your message was successfully sent. <br/><Br/>I will get back to you soon.";
+                        } else {
+                            $message = " Something went wrong when the server tried to send your message.<br/>This is usually due to a server error, and is probably not your fault.<br/>We apologise for any inconvenience caused.";
+                        }
+                } else {
+
+                    echo $crackMessage;
+                }
+            } else {
+                echo $valid_email;
+                echo $crackMmessage;
+            }
+        }
+        ?>
+
+        <div class="container">
+            <form class="customForm mb-5" method="post" action="contact.php">
+            <?php
+            if(isset($message))
+            {
+                echo "<p class=\"lab text-center\">".$message."</p>";
+            } else {
+                if($displayForm)
+                { ?>
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input required type="text" class="form-control" name="firstName" id="firstName" placeholder="" value="<?= isset($firstName) ? htmlspecialchars($firstName):""; ?>">
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input required type="text" class="form-control" name="lastName" id="lastName" placeholder="" value="<?= isset($lastname) ? htmlspecialchars($lastName):""; ?>">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" required class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="" value="<?= isset($email) ? htmlspecialchars($email):""; ?>">
+                </div>
+                <div class="form-group">
+                    <label for="confirmEmail">Confirm Email Address</label>
+                    <input oninput="checkEmail(this)" type="confirmEmail" required class="form-control" id="confirmEmail" aria-describedby="confirmEmailHelp" placeholder="">
+                    <small id="confirmEmailHelp" class="form-text text-muted">Please confirm your email address.</small>
+                </div>
+                <div class="form-group">
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="text" class="form-control" id="phoneNumber" name="phone" placeholder="" value="<?= isset($phone) ? htmlspecialchars($phone):""; ?>">
+                </div>
+
+                <div class="form-group">
+                    <label for="eventType">Event Type</label>
+                    <input required type="text" class="form-control" id="eventType" name="event" placeholder="" value="<?= isset($event) ? htmlspecialchars($event):""; ?>">
+                </div>
+                <!--
+                <div class="form-group">
+                    <label for="eventType">Event Type</label>
+                    <select required class="form-control" name="eventType" name="event" id="eventType" value="<?= isset($event) ? htmlspecialchars($event):""; ?>">
+                        <option>Wedding</option>
+                        <option>Photoshoot</option>
+                        <option>Headshot</option>
+                        <option>Prom</option>
+                        <option>Makeup Lesson</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="eventother">If other, what is your event?</label>
+                    <input type="text" class="form-control" id="evnetother" name="eventother" placeholder="Other" value="<?= isset($eventother) ? htmlspecialchars($eventother):""; ?>">
+                </div>
+                -->
+
+                <div class="form-group">
+                    <label for="date">Event Date</label>
+                    <input required type="text" class="form-control" id="datepicker" name="date" placeholder="" value="<?= isset($date) ? htmlspecialchars($date):""; ?>">
+                </div>
+
+                <div class="form-group">
+                    <label for="startTime">Event Start Time</label>
+                    <input type="text" class="form-control" id="startTime" name="time" placeholder="" value="<?= isset($time) ? htmlspecialchars($time):""; ?>">
+                </div>
+
+                <div class="form-group">
+                    <label for="serviceCount">How many people need makeup services?</label>
+                    <input type="text" class="form-control" id="serviceCount" name="count" placeholder="" value="<?= isset($count) ? htmlspecialchars($count):""; ?>">
+                </div>
+
+                <div class="form-group">
+                    <label for="hair">Do you need hair services?</label>
+                    <select class="form-control" name="hair" id="hair" name="hair" value="<?= isset($hair) ? htmlspecialchars($hair):""; ?>">
+                        <option>No</option>
+                        <option>Yes</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="referredBy">How did you hear about me?</label>
+                    <input type="text" class="form-control" id="referredBy" name="refer" placeholder="" value="<?= isset($refer) ? htmlspecialchars($refer):""; ?>">
+                </div>
+                <!--
+                <div class="form-group">
+                    <label for="referredBy">How did you hear about me?</label>
+                    <select required class="form-control" id="referredBy" name="refer" value="<?= isset($refer) ? htmlspecialchars($refer):""; ?>">
+                        <option>Google</option>
+                        <option>Facebook</option>
+                        <option>Instagram</option>
+                        <option>Friend</option>
+                        <option>Vendor</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="other">If from a friend, vendor, or other, let me know who so I can thank them</label>
+                    <input type="text" class="form-control" id="other" name="other" placeholder="Name" value="<?= isset($other) ? htmlspecialchars($other):""; ?>">
+                </div>
+                -->
+
+                <!-- 
+                <div class="form-group">
+                    <label for="referredBy">How did you hear about me?</label>
+                    <input type="text" class="form-control" name="refer" id="referredBy" list="referrals"  value="<?= isset($refer) ? htmlspecialchars($refer):""; ?>"/>
+                    <datalist id="referrals">
+                        <option>Google</option>
+                        <option>Facebook</option>
+                        <option>Instagram</option>
+                        <option>Friend</option>
+                        <option>Vendor</option>
+                        <option>Other: Please be specific so I can thank them.</option>
+                    </datalist>
+                </div>
+                -->
+
+                <div class="form-group">
+                        <label for="comment">Message</label>
+                        <textarea class="form-control" id="comment" name="message" rows="3" placeholder="" value="<?= isset($message) ? htmlspecialchars($message):""; ?>"></textarea>
+                </div>
+
+
+                <button type="submit" class="btn btn-primary" id="contactButton">Submit</button>
+
+            </form>
+            <?php
+                }
+            }?>
+        </div>
+
+{{> footer }}
