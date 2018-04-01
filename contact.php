@@ -52,7 +52,7 @@
                             <a class="nav-link" href="./gallery.html">GALLERY</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./critiques.html">CRITIQUES</a>
+                            <a class="nav-link" href="./ovations.html">OVATIONS</a>
                         </li>
                         <li class="navr-item">
                             <a class="nav-link" href="./contact.php">CONTACT</a>
@@ -152,6 +152,8 @@
         ?>
 
         <div class="container">
+            <p class="text-center">Do you need to reach me urgently? Call <a class="seaFoamContact font-weight-bold" href="tel:+19197571819">919-757-1819</a></p>
+
             <form class="customForm mb-5" method="post" action="contact.php">
             <?php
             if(isset($message))
@@ -325,19 +327,16 @@
             <!--copyright -->
         <div id="copyright" class="container">
             <div class="mt-5 container text-center">
-                <p>© Theresa Burden 2018</p>
+                <p>Apex, North Carolina | <a class="seaFoamContact font-weight-bold" href="tel:+19197571819">919-757-1819</a> | <a class="seaFoamContact font-weight-bold" href="mailto:theresa@theresaburden.com">theresa@theresaburden.com</a> | © Theresa Burden 2018</p>
             </div>
         </div>
 
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-
-
-        <script src="https://cdn.jsdelivr.net/gh/atatanasov/gijgo@1.7.3/dist/combined/js/gijgo.min.js" type="text/javascript"></script>
-
-        <!-- Custom js -->
-        <script src="js/contact.js"></script>
-
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/gh/atatanasov/gijgo@1.7.3/dist/combined/js/gijgo.min.js" type="text/javascript"></script>
+        <script src="js/contact.js"></script>
+
     </body>
 </html>
