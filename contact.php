@@ -132,7 +132,7 @@
 
                 if(!$crack)
                 {
-                        $mainsent = mail("theresa@theresaburden.com", "Email via theresaburden.com Website", $smessage, "From: no-reply@theresaburden.com\r\nBounce-to:no-reply@theresaburden.com\r\nReply-To:".$email);
+                        $mainsent = mail("theresaburden@gmail.com", "Email via theresaburden.com Website", $smessage, "From:".$email."\r\nBounce-to:".$email."\r\nReply-To:".$email);
                         if($mainsent)
                         {
                             $displayForm = False;
