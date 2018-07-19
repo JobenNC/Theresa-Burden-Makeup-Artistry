@@ -214,3 +214,5 @@ Should I leave js files coming from CDNs?
 What can webpack do for me?  Can I bundle images???
 
 There's something weird going on with faq right before you get to the smallest size.  the picture might be wrapping back around?  it's not alternating picture & text appropriately
+
+Images are resizing quite a bit, how to I make this better? How do I reduce image load time?
